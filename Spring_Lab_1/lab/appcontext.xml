@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    <context:annotation-config />
+
+
+        
+    <bean id="emp_details" class="com.lab.ex1.bean.Employee">  
+         <property name="id"><value>12345</value></property>
+         <property name="name" value="Harriet"></property>
+         <property name="salary"><value>40000.0</value></property>
+         <property name="bu" value="PES-BU"></property>
+         <property name="age" value="30"></property>
+    </bean>
+    
+    <bean id="emp_details1" class="com.lab.ex2.bean.Employee">  
+         <property name="id"><value>12345</value></property>
+         <property name="name" value="Harriet"></property>
+         <property name="salary"><value>40000.0</value></property>
+         <property name="bu" value="PES-BU"></property>
+         <property name="age" value="30"></property>
+    </bean>
+    
+    <bean id="emp_sbu_details" class="com.lab.ex2.bean.SBU">  
+         <property name="sbuId"><value>PES-SBU</value></property>
+         <property name="sbuName" value="Product Engineering Services"></property>
+         <property name="sbuHead"><value>Kiran Rao</value></property>
+    </bean>
+        
+    
+   <!--   <bean id="emp_sbu_details1" class="com.lab.ex3.bean.SBU">  
+         <property name="sbuId"><value>PES-SBU</value></property>
+         <property name="sbuName" value="Product Engineering Services"></property>
+         <property name="sbuHead"><value>Kiran Rao</value></property>
+         <property name="empList"><list>
+            <value>1</value>
+            <bean class="com.lab.ex3.bean.Employee">
+                <property name="id"><value>12345</value></property>
+                <property name="name" value="Harriet" />
+                 <property name="salary"><value>40000.0</value></property>
+            </bean>
+            <value>2</value>
+            <bean class="com.lab.ex3.bean.Employee">
+                <property name="id"><value>12346</value></property>
+                <property name="name" value="Jack" />
+                <property name="salary"><value>50000.0</value></property>
+            </bean>
+          </list>
+        </property>
+    </bean> -->
+
+	
+</beans>
